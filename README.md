@@ -56,6 +56,8 @@ const lib = (await WebAssembly.instantiate(new Uint8Array(buf))).instance.export
 console.log(lib.fib(10)) // 55
 ```
 
+Tested using rustc 1.30.1, cargo 1.30.0, node 10.13.0
+
 ## Resources
 
 - [wasm-pack](https://github.com/rustwasm/wasm-pack)
