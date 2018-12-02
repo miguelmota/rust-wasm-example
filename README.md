@@ -1,6 +1,6 @@
 # Rust WASM Example
 
-> Example on compiling a Rust library into WebAssembly
+> Example on compiling a [Rust](https://www.rust-lang.org) library into [WebAssembly](https://webassembly.org/)
 
 ## Instructions
 
@@ -10,7 +10,15 @@ Install `wasm-pack`
 curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
 ```
 
-Build wasm
+Clone this repo
+
+```bash
+git clone https://github.com/miguelmota/rust-wasm-example
+
+cd rust-wasm-example/
+```
+
+Build WASM
 
 ```bash
 wasm-pack build
