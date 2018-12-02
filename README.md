@@ -4,13 +4,13 @@
 
 ## Instructions
 
-Install `wasm-pack`
+Install `wasm-pack`:
 
 ```bash
 curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
 ```
 
-Clone this repo
+Clone this repo:
 
 ```bash
 git clone https://github.com/miguelmota/rust-wasm-example
@@ -18,7 +18,7 @@ git clone https://github.com/miguelmota/rust-wasm-example
 cd rust-wasm-example/
 ```
 
-The example library exposes a `fib` function which calculates the [Fibonacci number](https://en.wikipedia.org/wiki/Fibonacci_number) of the given number.
+The example library exposes a `fib` function which calculates the [Fibonacci number](https://en.wikipedia.org/wiki/Fibonacci_number) of the given number:
 
 ```rust
 #[no_mangle]
@@ -31,19 +31,19 @@ pub extern "C" fn fib(n: i32) -> i32 {
 }
 ```
 
-Build WASM
+Build WASM:
 
 ```bash
 wasm-pack build
 ```
 
-Output
+Output location:
 
 ```bash
 ./target/wasm32-unknown-unknown/release/rust_wasm_example.wasm
 ```
 
-You can now use the compiled wasm in your program. In this example, well load it as a [Node.js](https://nodejs.org/en/) module.
+You can now use the compiled wasm in your program. In this example, well load it as a [Node.js](https://nodejs.org/en/) module:
 
 ```js
 const fs = require('fs')
