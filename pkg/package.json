@@ -1,0 +1,15 @@
+{
+  "name": "rust-wasm-example",
+  "collaborators": [
+    "Miguel Mota <hello@miguelmota.com>"
+  ],
+  "version": "0.1.0",
+  "files": [
+    "rust_wasm_example_bg.wasm",
+    "rust_wasm_example.js",
+    "rust_wasm_example.d.ts"
+  ],
+  "module": "rust_wasm_example.js",
+  "types": "rust_wasm_example.d.ts",
+  "sideEffects": "false"
+}
