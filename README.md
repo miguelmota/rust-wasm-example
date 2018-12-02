@@ -56,6 +56,12 @@ const lib = (await WebAssembly.instantiate(new Uint8Array(buf))).instance.export
 console.log(lib.fib(10)) // 55
 ```
 
+## Resources
+
+- [wasm-pack](https://github.com/rustwasm/wasm-pack)
+- [rust wasm hello world](https://rustwasm.github.io/book/game-of-life/hello-world.html)
+- [wasm-pack-template](https://github.com/rustwasm/wasm-pack-template)
+
 ## License
 
 [MIT](LICENSE)
